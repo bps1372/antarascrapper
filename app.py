@@ -121,7 +121,7 @@ with st.sidebar:
     st.header("⚙️ Pengaturan Parameter")
     keyword = st.text_input("Kata Kunci", value="Contoh: Kota Solok")
     tahun = st.text_input("Tahun", value="Contoh: 2026")
-    max_pages = st.number_input("Jumlah Halaman", min_value=1, max_value=1000, value=50 (default)
+    max_pages = st.number_input("Jumlah Halaman", min_value=1, max_value=1000, value=50 (default))
     start_button = st.button("🚀 Mulai Scrapping")
 
 # ===================== PROCESS =====================
