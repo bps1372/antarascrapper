@@ -114,13 +114,14 @@ def scrape_article_details(url, year_filter):
 
 # ===================== MAIN UI =====================
 st.markdown("<div class='main-title'>📰 Antara News Sumbar Scraper</div>", unsafe_allow_html=True)
-st.markdown("<div class='subtitle'>Aplikasi pengambilan berita Antara Sumbar berdasarkan kata kunci dan tahun</div>", unsafe_allow_html=True)
+st.markdown("<div class='subtitle'>Aplikasi data scrapping berita pada situs berita ANTARA Sumbar (https://sumbar.antaranews.com/) <br> berdasarkan keyword dan tahun</div>", unsafe_allow_html=True)
+st.markdown("<div class='subtitle'>Aplikasi data scrapping berita Antara Sumbar berdasarkan keyword dan tahun</div>", unsafe_allow_html=True)
 
 with st.sidebar:
     st.header("⚙️ Pengaturan Parameter")
     keyword = st.text_input("Kata Kunci", value="Contoh: Kota Solok")
     tahun = st.text_input("Tahun", value="Contoh: 2026")
-    max_pages = st.number_input("Jumlah Halaman", min_value=1, max_value=1000, value=1)
+    max_pages = st.number_input("Jumlah Halaman", min_value=1, max_value=1000, value=50 (default)
     start_button = st.button("🚀 Mulai Scrapping")
 
 # ===================== PROCESS =====================
@@ -179,6 +180,6 @@ if start_button and keyword and tahun:
 # ===================== FOOTER =====================
 st.markdown("""
 <div class="footer">
-© BPS Kota Solok 1372 - 2026
+© BPS Kota Solok- 2026
 </div>
 """, unsafe_allow_html=True)
