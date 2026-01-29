@@ -115,7 +115,6 @@ def scrape_article_details(url, year_filter):
 # ===================== MAIN UI =====================
 st.markdown("<div class='main-title'>📰 Antara News Sumbar Scraper</div>", unsafe_allow_html=True)
 st.markdown("<div class='subtitle'>Aplikasi data scrapping berita pada situs berita ANTARA Sumbar (https://sumbar.antaranews.com/) <br> berdasarkan keyword dan tahun</div>", unsafe_allow_html=True)
-st.markdown("<div class='subtitle'>Aplikasi data scrapping berita Antara Sumbar berdasarkan keyword dan tahun</div>", unsafe_allow_html=True)
 
 with st.sidebar:
     st.header("⚙️ Pengaturan Parameter")
