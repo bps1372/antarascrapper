@@ -118,8 +118,8 @@ st.markdown("<div class='subtitle'>Aplikasi pengambilan berita Antara Sumbar ber
 
 with st.sidebar:
     st.header("⚙️ Pengaturan Parameter")
-    keyword = st.text_input("Kata Kunci", value="Kota Solok")
-    tahun = st.text_input("Tahun", value="2026")
+    keyword = st.text_input("Kata Kunci", value="Contoh: Kota Solok")
+    tahun = st.text_input("Tahun", value="Contoh: 2026")
     max_pages = st.number_input("Jumlah Halaman", min_value=1, max_value=1000, value=1)
     start_button = st.button("🚀 Mulai Scrapping")
 
