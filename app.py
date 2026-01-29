@@ -179,7 +179,6 @@ if start_button and keyword and tahun:
 # ===================== FOOTER =====================
 st.markdown("""
 <div class="footer">
-© Alber Analafean – Asisten Pranata Komputer BPS Kota Solok  
-(Program Maganghub Kementrian Ketenagakerjaan Republik Indonesia 2025)
+© BPS Kota Solok 1372 - 2026
 </div>
 """, unsafe_allow_html=True)
