@@ -120,7 +120,7 @@ st.markdown("<div class='subtitle'>Aplikasi data scrapping berita pada situs ber
 with st.sidebar:
     st.header("⚙️ Pengaturan Parameter")
     keyword = st.text_input("Kata Kunci, Contoh: Kota Solok")
-    tahun = st.text_input("Tahun", value="Contoh: 2026")
+    tahun = st.text_input("Tahun, Contoh: 2026")
     max_pages = st.number_input("Jumlah Halaman, Default:50", min_value=1, max_value=1000, value=50)
     start_button = st.button("🚀 Mulai Scrapping")
 
