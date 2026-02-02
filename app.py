@@ -145,8 +145,12 @@ st.markdown(f"""
     </div>
 """, unsafe_allow_html=True)
 
-st.markdown("<div class='subtitle'>Aplikasi data scrapping berita pada situs berita ANTARA Sumbar (https://sumbar.antaranews.com/) berdasarkan keyword dan tahun
-Pengunaan data juga sangat bisa digunakan salah satunya dalam rangka pemenuhan Fenomena PDRB Triwulanan</div>", unsafe_allow_html=True)
+st.markdown("""
+<div class='subtitle'>
+Aplikasi data scrapping berita pada situs berita ANTARA Sumbar (https://sumbar.antaranews.com/) berdasarkan keyword dan tahun. <br>
+Penggunaan data juga sangat bisa digunakan salah satunya dalam rangka pemenuhan Fenomena PDRB Triwulanan.
+</div>
+""", unsafe_allow_html=True)
 
 # ===================== PROCESS =====================
 if start_button:
