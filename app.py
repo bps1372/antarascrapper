@@ -8,7 +8,7 @@ import io
 
 # ===================== CONFIG =====================
 st.set_page_config(
-    page_title="Data NewsScraper",
+    page_title="Data NewsScraper - BPS1372",
     page_icon="📰",
     layout="wide"
 )
@@ -141,7 +141,7 @@ with st.sidebar:
 st.markdown(f"""
     <div class="header-container">
         <img src="{LOGO_URL}" class="logo-img">
-        <div class="main-title">Antara News Sumbar Scraper</div>
+        <div class="main-title">Data NewsScraper - BPS1372</div>
     </div>
 """, unsafe_allow_html=True)
 
