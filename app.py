@@ -208,6 +208,6 @@ if start_button:
 # ===================== FOOTER =====================
 st.markdown("""
 <div class="footer">
-© BPS Kota Solok - 2026 | Developed with ❤️
+© BPS Kota Solok - 2026
 </div>
 """, unsafe_allow_html=True)
