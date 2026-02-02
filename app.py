@@ -128,7 +128,6 @@ def scrape_article_details(url, year_filter):
 
 # ===================== SIDEBAR =====================
 with st.sidebar:
-    st.markdown(f'<img src="{LOGO_URL}" class="sidebar-logo">', unsafe_allow_html=True)
     st.header("⚙️ Pengaturan")
     keyword = st.text_input("Keyword", placeholder="Contoh: Kota Solok")
     tahun = st.text_input("Tahun", placeholder="Contoh: 2026")
