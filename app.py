@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import time
 from urllib.parse import quote_plus
+import io
 
 # ===================== CONFIG =====================
 st.set_page_config(
@@ -166,12 +167,16 @@ if start_button and keyword and tahun:
         st.success(f"📊 Berhasil mengambil {len(df)} berita")
         st.dataframe(df, use_container_width=True)
 
-        csv = df.to_csv(index=False).encode("utf-8")
+        # Fungsi konversi ke Excel (XLSX)
+        buffer = io.BytesIO()
+        with pd.ExcelWriter(buffer, engine='openpyxl') as writer:
+            df.to_excel(writer, index=False, sheet_name='Data Berita')
+        
         st.download_button(
-            "📥 Download CSV",
-            csv,
-            file_name=f"berita_{keyword}_{tahun}.csv",
-            mime="text/csv"
+            label="📥 Download Excel (.xlsx)",
+            data=buffer.getvalue(),
+            file_name=f"berita_{keyword}_{tahun}.xlsx",
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
     else:
         st.warning("⚠️ Tidak ada berita ditemukan")
