@@ -8,7 +8,7 @@ import io
 
 # ===================== CONFIG =====================
 st.set_page_config(
-    page_title="Antara News Sumbar Scraper",
+    page_title="Data NewsScraper",
     page_icon="📰",
     layout="wide"
 )
